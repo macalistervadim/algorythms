@@ -25,6 +25,5 @@ def quicksort(nums: array.array[int]) -> array.array[int]:
         return quicksort(less) + equal + quicksort(greater)
 
 
-# Создаем тестовый массив и вызываем функцию сортировки
 nums = array.array('i', [10, 5, 2, 3])
 print(quicksort(nums))
