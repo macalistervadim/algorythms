@@ -12,8 +12,6 @@ def binary_search(list, item):
         else:
             low = mid + 1
 
-    return None
-
 
 test_list = [1, 2, 3, 4, 10, 15]
 
