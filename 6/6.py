@@ -28,6 +28,6 @@ class Solution:
 
 
 sol = Solution()
-print(sol.searchInsert(nums = [1,3,5,6], target = 1))
+print(sol.searchInsert(nums = [1,3,5,6], target = 6))
 
         

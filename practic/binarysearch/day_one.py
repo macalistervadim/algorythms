@@ -9,7 +9,6 @@ def binarySearch(nums: list[int], target: int) -> int:
 
     while low <= high:
         middle = (low + high) // 2
-        print(middle)
         gues = nums[middle]
 
         if gues == target:
