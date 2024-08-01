@@ -7,3 +7,5 @@ def nameUser(age: int | float, name: str | None = None) -> str:
 
 print(nameUser(age=12, name="Aleks"))
 
+a = 1
+print(type(a))
