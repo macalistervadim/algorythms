@@ -1,5 +1,5 @@
 """
-Практика по алгоритму поиска в глубину (DFS), день 1
+Практика по алгоритму поиска в глубину, день 2ы
 """
 
 
@@ -19,9 +19,9 @@ def DFS(graph, startDot, visited=None):
 
     visited.add(startDot)
 
-    for nextNeighbour in graph[startDot] - visited:
-        DFS(graph, nextNeighbour, visited)
-    
+    for i in graph[startDot] - visited:
+        DFS(graph, i, visited)
+
     return visited
 
 
