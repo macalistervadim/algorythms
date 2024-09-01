@@ -29,18 +29,3 @@ class Stack(Generic[T]):
 
     def getItems(self) -> list[T]:
         return self.items
-
-
-stack = Stack()
-stack.push("Red")
-stack.push("Green")
-stack.push("Yellow")
-stack.push(1)
-
-print(stack.isEmpty())
-
-print(stack.size())
-
-print(stack.peek())
-
-print(stack.getItems())
