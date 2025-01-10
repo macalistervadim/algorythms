@@ -1,36 +1,29 @@
 """
-Алгоритм Дейкстеры
+Алгоритм Дейкстры
 """
 
-graph = {}
-graph["start"] = {}
-graph["start"]["a"] = 6
-graph["start"]["b"] = 2
-graph["a"] = {}
-graph["a"]["fin"] = 1
-graph["b"] = {}
-graph["b"]["a"] = 3
-graph["b"]["fin"] = 5
-graph["fin"] = {}
-print(graph)
+graph = {
+    "start": {"a": 6, "b": 2},
+    "a": {"fin": 1},
+    "b": {"a": 3, "fin": 5},
+    "fin": {},
+}
 
 infinity = float("inf")
-print(infinity)
-costs = {}
-costs["a"] = 6
-costs["b"] = 2
-costs["fin"] = infinity
-costs["start"] = 0
-print(costs)
+costs = {
+    "a": 6,
+    "b": 2,
+    "fin": infinity,
+    "start": 0,
+}
 
-parents = {}
-parents["a"] = "start"
-parents["b"] = "start"
-parents["fin"] = None
-print(parents)
+parents = {
+    "a": "start",
+    "b": "start",
+    "fin": None,
+}
 
 processed = []
-
 
 def findLowestCostNode(costs):
     lowest_cost = float("inf")
