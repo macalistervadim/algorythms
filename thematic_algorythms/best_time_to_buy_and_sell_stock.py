@@ -21,7 +21,7 @@ def max_profit(prices: list[int]) -> int:
             max_profit = profit
         
         # Если текущая цена меньше минимальной цены, обновляем min_price
-        elif prices[i] < min_price:
+        if prices[i] < min_price:
             min_price = prices[i]
     
     return max_profit  # Возвращаем максимальную прибыль
